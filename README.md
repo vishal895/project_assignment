@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🛍️ Product Listing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a frontend assignment built using **React**, featuring:
 
-## Available Scripts
+- Product listing with search, filters, sorting, infinite scrolling
+- Product detail view
+- Responsive design with dark mode
+- Deployed using Vercel with CI/CD via GitHub Actions
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features & Methods Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔍 Search Functionality
+- Implemented **debounced search** to optimize API calls when searching by product name.
+- Users can also search products using **barcode scanning** via input.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🧪 Filtering & Sorting
+Users can filter products by:
+- **Category** (multi-select supported)
+- **Nutrition values**, such as sugar content using range-based filtering
 
-### `npm test`
+Sorting options include:
+- Product Name (A-Z, Z-A)
+- Nutrition Grade (Asc/Desc)
+- Calories (High to Low & Low to High)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Used JavaScript methods like:
+- `filter()` for category and nutritional filtering
+- `sort()` for sorting functionality
+- `includes()` for keyword matching
+- `some()` for validating ingredient availability
 
-### `npm run build`
+### 📦 Infinite Scrolling
+- Pagination is implemented using **infinite scroll**, loading more products as the user scrolls down the page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📄 Product Detail Page
+When a user clicks on a product card, they are navigated to a dedicated **Product Detail Page** displaying:
+- Full image
+- Complete list of ingredients
+- Nutritional values
+- Tags and labels (e.g., Vegan, Gluten-Free)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ⚙️ State Management & API Handling
+- Utilized **React Query** for efficient API handling, including:
+  - API caching
+  - Lazy loading
+  - Automated refetching and error handling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💅 UI/UX & Responsiveness
+- Fully responsive and **mobile-friendly design** using **Tailwind CSS**
+- Includes **dark mode support**
+- **Skeleton loaders** provide a smooth user experience during data fetch
 
-### `npm run eject`
+### 🚀 Deployment & CI/CD
+- Project is deployed using **Vercel**
+- **CI/CD setup** with **GitHub Actions** automates:
+  - Code testing
+  - Dependency installation
+  - Production build
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⏱️ Time Taken
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Total Time: **1 Day**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔗 Live URL & Repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 🌐 **Live Demo:** [https://project-assignment-chi.vercel.app/](https://project-assignment-chi.vercel.app/)
+- 📂 **GitHub Repo:** [https://github.com/vishal895/project_assignment](https://github.com/vishal895/project_assignment)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
