@@ -1,0 +1,5 @@
+.folder_css{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
