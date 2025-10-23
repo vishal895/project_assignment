@@ -5,6 +5,7 @@ import Nav from "./Component/Nav";
 import DetailPage from "./Pages/DetailPage";
 import { Route, Routes } from "react-router-dom";
 import Fileexplore from "./Pages/FileExplore/fileexplore";
+import Pagination from "./Pages/pagination/pagination";
 
 function App() {
   // const [searchQuery, setSearchQuery] = useState("");
@@ -21,7 +22,8 @@ function App() {
 
 
       {/* file explore */}
-      <Fileexplore/>
+      {/* <Fileexplore/> */}
+      <Pagination/>
     </div>
   );
 }

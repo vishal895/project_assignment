@@ -3,3 +3,20 @@
     gap: 15px;
     align-items: center;
 }
+
+
+.grid_portion{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    align-items: center;
+}
+.card_box{
+    border: 1px solid black;
+    padding: 2px;
+
+}
+.flex_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
